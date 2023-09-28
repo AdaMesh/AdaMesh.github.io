@@ -8,6 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdaMesh</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -26,23 +29,65 @@
 
 <body>
 
-<div class="content has-text-centered">
-  <p>AdaMesh: Hello world!</h3>
-</div>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AdaMesh: Personalized Facial Expressions and Head Poses for Speech-Driven 3D Facial Animation</h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Speech-driven 3D facial animation aims at generating facial movements that are
+synchronized with the driving speech, which has been widely explored recently.
+Existing works mostly neglect the person-specific talking style in generation, in-
+cluding facial expression and head pose styles. Several works intend to capture the
+personalities by fine-tuning modules. However, limited training data leads to the
+lack of vividness. In this work, we propose AdaMesh, a novel adaptive speech-
+driven facial animation approach, which learns the personalized talking style from
+a reference video of about 10 seconds and generates vivid facial expressions
+and head poses. Specifically, we explore the data-efficient low-rank adaptation
+(LoRA) training technique and update the mixture-of-LoRA (MoLoRA) parame-
+ters in an expression adapter to efficiently capture the facial expression style. For
+the personalized pose style, we propose a pose adapter that requires no fin-tuning
+builds a discrete pose prior and retrieves the appropriate style embedding with
+a semantic-pose matrix to generate realistic head poses. Extensive experimental
+results show that our method outperforms state-of-the-art methods, preserves the
+talking style in the reference video, and generates vivid facial animation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          waiting for videos
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
 
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <!-- <p>supported by nerfies</p> -->
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
@@ -52,11 +97,8 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            We utilized <a
+            href="https://github.com/nerfies/nerfies.github.io">source code</a> to help build this page.
           </p>
         </div>
       </div>
