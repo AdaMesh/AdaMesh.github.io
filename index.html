@@ -18,7 +18,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <!-- <link rel="icon" href="./static/images/ICLR-icon.svg"> -->
+  <link rel="icon" href="./static/images/window-icon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -51,7 +51,6 @@
 
               <!-- Code Link. -->
               <span class="link-block">
-                <!-- https://github.com/adamesh/adamesh -->
                 <a href="https://github.com/adamesh/adamesh"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -73,13 +72,17 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
+    <!-- update -->
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <!-- <h2 class="title is-3">Video</h2> -->
-        <p>This paper proposes AdaMesh for speech-driven 3D facial animation, which aims to capture the
-          personalized talking style from the given reference video, to generate rich facial expressions and
-          diverse head poses.</p>
+        <h2 class="title is-3">Updates</h2>
+        <div class="content has-text-justified">
+          <p>
+            <li><strong>[11/2023]</strong> <font color="red" size="3">!!!</font> Render the predicted meshes into photo-realistic avatars with an image2image translation network to show one application of our work.</li>
+            <li><strong>[10/2023]</strong> More comparison results on <a href="https://voca.is.tue.mpg.de/">VOCASET</a> dataset in the supplementary file.</a></li>
+            <li><strong>[8/2023]</strong> <a href="#target-area">Compare with state-of-the-art methods.</a></a></li>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -99,8 +102,24 @@
     </div>
     <!--/ Paper video. -->
 
+    <!-- video stamp -->
+    <div class="columns is-centered" style="margin-top: -60px;">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <ol>
+            <li><a href="#teaser" onclick="document.getElementById('teaser').currentTime=89">01:29-01:49 Speech-lip synchronization</a></li>
+            <li><a href="#teaser" onclick="document.getElementById('teaser').currentTime=110">01:50-02:06 Expression richness</a></li>
+            <li><a href="#teaser" onclick="document.getElementById('teaser').currentTime=127">02:07-02:30 Head pose naturalness</a></li>
+            <li><a href="#teaser" onclick="document.getElementById('teaser').currentTime=172">02:52-03:08 Compare with different topologies and sing</a></li>
+            <li><a href="#teaser" onclick="document.getElementById('teaser').currentTime=188">03:08-03:11 Learn more/arbitrary personalized talking styles</a></li>
+            <li><a href="#teaser" onclick="document.getElementById('teaser').currentTime=192">03:12-03:33 Render meshes into photo-realistic avatars</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -131,7 +150,7 @@
     </div>
 
     <!-- Approach. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Approach</h2>
       </div>
@@ -168,9 +187,9 @@
     </div>
 
     <!-- Compare. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Features of Compared Methods</h2>
+        <h2 class="title is-3"><div id="target-area">Features of Compared Methods</div></h2>
         <div class="content has-text-justified">
           <p>
             we further list the features of the compared methods below.
