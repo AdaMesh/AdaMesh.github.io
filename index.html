@@ -161,7 +161,7 @@
         <!-- <div class="content has-text-justified">
           <img src="./static/images/overview.png">
         </div> -->
-        <h3 class="title is-4">Expression Adapter</h2>
+        <h3 class="title is-4">Expression Adapter</h3>
 
         <p>To achieve efficient adaptation for facial expressions, we pre-train the expression adapter to learn
           general and person-agnostic information that ensures lip synchronization and then optimize the
@@ -172,7 +172,7 @@
           <img src="./static/images/exp_adapter.png">
         </div>
 
-        <h3 class="title is-4">Pose Adapter</h2>
+        <h3 class="title is-4">Pose Adapter</h3>
 
         <p>
           For modeling the pose style, we propose a pose adapter by formulating the adaption as a simple but efficient retrieval task instead of fine-tuning modules.
@@ -190,11 +190,6 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3"><div id="target-area">Features of Compared Methods</div></h2>
-        <div class="content has-text-justified">
-          <p>
-            we further list the features of the compared methods below.
-          </p>
-        </div>
       </div>
     </div>
     <!--/ Compare. -->
@@ -202,10 +197,124 @@
     <div class="columns is-centered">
       <div class="column is-three-fifths">
         <div class="content has-text-justified">
-          <img src="./static/images/method_compare.png" style="transform: scale(1.35); margin-top: 20px;">
+          <img src="./static/images/method_compare.png">
         </div>
       </div>
     </div>
+
+    <!-- User study. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">User Study [Rebuttal Update]</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">Speech-Lip Synchronization</h3>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item OB0090_0006">
+            <video poster="" id="OB0090_0006" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/obama/OB0090_0006.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item OB0286_0010">
+            <video poster="" id="OB0286_0010" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/obama/OB0286_0010.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item OB0045_0020">
+            <video poster="" id="OB0045_0020" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/obama/OB0045_0020.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item OB0095_0029">
+            <video poster="" id="OB0095_0029" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/obama/OB0095_0029.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item OB0107_0030">
+            <video poster="" id="OB0107_0030" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/obama/OB0107_0030.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4">Head Pose</h3>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item vox_00023">
+            <video poster="" id="vox_00023" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/vox/id03862_5m5iPZNJS6c_00023.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item vox_00032">
+            <video poster="" id="vox_00032" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/vox/id04536_2j8I_WX5mhY_00032.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item vox_00140">
+            <video poster="" id="vox_00140" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/vox/id01228_ITBk58yOpCM_00140.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item vox_00227">
+            <video poster="" id="vox_00227" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/vox/id01224_bhPid_mDK38_00227.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item vox_00282">
+            <video poster="" id="vox_00282" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/vox/id02057_Y-MOxNRv6GM_00282.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4">Expression Richness</h3>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item mead_006">
+            <video poster="" id="mead_006" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/mead/M007_front_happy_level_3_006.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item mead_007">
+            <video poster="" id="mead_007" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/mead/M007_front_happy_level_3_007.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item mead_009">
+            <video poster="" id="mead_009" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/mead/M007_front_happy_level_3_009.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item mead_014">
+            <video poster="" id="mead_014" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/mead/M007_front_happy_level_3_014.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item mead_016">
+            <video poster="" id="mead_016" autoplay controls muted loop playsinline height="60%">
+              <source src="./static/videos/mead/M007_front_happy_level_3_016.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ User study. -->
     
   </div>
 </section>
